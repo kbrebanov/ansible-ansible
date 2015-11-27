@@ -1,2 +1,4 @@
 ---
 # defaults file for ansible
+
+ansible_install_version: 1.9.4

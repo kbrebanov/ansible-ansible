@@ -1,2 +1,14 @@
 ---
 # tasks file for ansible
+
+- name: Include distribution specific variables
+  include_vars: "{{ ansible_distribution }}.yml"
+  tags: ansible
+
+- include: CentOS.yml
+  when: ansible_distribution == "CentOS"
+  tags: ansible
+
+- include: Ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  tags: ansible
