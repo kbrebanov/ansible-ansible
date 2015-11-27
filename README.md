@@ -1,6 +1,8 @@
 ansible
 =======
 
+[![Ansible Role](https://img.shields.io/ansible/role/6257.svg)](https://galaxy.ansible.com/list#/roles/6257)
+
 Installs Ansible
 
 Requirements
